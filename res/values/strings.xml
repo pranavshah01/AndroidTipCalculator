@@ -8,5 +8,7 @@
     <string name="btn_20_hint">20%</string>
     <string name="btn_15_hint">15%</string>
     <string name="tv_tip_hint">"Tip is: "</string>
+    <string name="et_billamt_hint">Enter bill amount</string>
+    <string name="tv_tipamt_hint">Tip Amount</string>
 
 </resources>

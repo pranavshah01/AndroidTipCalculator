@@ -31,35 +31,35 @@ public class TipCalculatorActivity extends Activity {
     public void calc_10tip(View v) {
 
     	if (etTotalAmount.getText().toString().trim().matches("")) {
-    		etTotalAmount.setText("0.0");
-    		tvTipAmount.setText("Tip is: 0.0");
+    		//etTotalAmount.setText("0.0");
+    		tvTipAmount.setText("");
     	    return;
     	}    
     	totalAmount = Double.parseDouble(etTotalAmount.getText().toString().trim());
         result = roundTwoDecimals(totalAmount * 10 / 100);     	
-    	tvTipAmount.setText("Tip is: "+result);
+    	tvTipAmount.setText(""+result);
     }
     
     public void calc_15tip(View v) {   	
     	if (etTotalAmount.getText().toString().trim().matches("")) {
-    		etTotalAmount.setText("0.0");
-    		tvTipAmount.setText("Tip is: 0.0");
+    		//etTotalAmount.setText("0.0");
+    		tvTipAmount.setText("");
     	    return;
     	} 
     	totalAmount = Double.parseDouble(etTotalAmount.getText().toString().trim());
     	result = roundTwoDecimals(totalAmount * 15 / 100);  	
-    	tvTipAmount.setText("Tip is: "+result);
+    	tvTipAmount.setText(""+result);
     }
     
     public void calc_20tip(View v) { 	
     	if (etTotalAmount.getText().toString().trim().matches("")) {
-    		etTotalAmount.setText("0.0");
-    		tvTipAmount.setText("Tip is: 0.0");
+    		//etTotalAmount.setText("0.0");
+    		tvTipAmount.setText("");
     	    return;
     	} 
     	totalAmount = Double.parseDouble(etTotalAmount.getText().toString().trim());
     	result = roundTwoDecimals(totalAmount * 20 / 100); 
-    	tvTipAmount.setText("Tip is: "+result);
+    	tvTipAmount.setText(""+result);
     }
     
     @Override
